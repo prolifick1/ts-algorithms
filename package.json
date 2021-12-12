@@ -1,0 +1,42 @@
+{
+  "name": "ts-algorithms",
+  "version": "1.0.0",
+  "description": "leetcode and hackerrank in typescript with tdd",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Luis Gabriel Manzo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.10.9",
+    "@types/sinon": "^10.0.4",
+    "@types/sinon-chai": "^3.2.5",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.2",
+    "sinon": "^12.0.1",
+    "sinon-chai": "^3.7.0",
+    "ts-node": "^10.3.0",
+    "typescript": "^4.4.4"
+  },
+  "engines": {
+    "node": ">=12.9"
+  },
+  "mocha": {
+    "extension": "ts",
+    "failZero": true,
+    "require": [
+      "ts-node/register",
+      "./setupTests.ts"
+    ],
+    "spec": "test/**/*.spec.ts"
+  }
+}
